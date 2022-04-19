@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <h3 class="title">The Code Review</h3>
+      <h3>Signup for our newsletter</h3>
+        <p>Get the latest news on how the code is doing right in your inbox</p>
+      </header>
+      <hr class="hr1">
+      <hr class="hr2">
+    <form action="index.html" method="post">
+      <section>
+        <fieldset>
+      <legend>Contact Information</legend>
+      <div>
+      <label for="name" class="leb">Full Name</label>
+      <span><input type="text" id="name" name="user_name" placeholder="Required">
+      </span>
+      </div>
+      <div>
+      <label for="mail" class="leb">Email Address</label>
+      <span><input type="email" id="mail" name="user_email" placeholder="Required">
+      </span>
+      </div>
+      <div>
+      <label for="phone" class="leb">Phone Number</Label>
+      <span><input type="tel" id="phone" name="user_phone_number">
+      </span>
+      </div>
+      <div>
+      <label for="address" class="leb">Street Address</label>
+      <span><input type="text" id="address" name="user_address">
+      </span>
+      </div>
+      <div>
+      <label for="city" class="leb">City</label>
+      <span><input type="text" id="city" name="user_city">
+      </span>
+      </div>
+      <div>
+      <label for="state" class="leb">State</label>
+      <span>
+      <select id="state" name="user_state">
+        <option selected>Choose State</option>
+        <option value="Alaska">Alaska</option>
+        <option value="Texas">Texas</option>
+        <option value="Florida">Florida</option>
+        <option value="Montana">Montana</option>
+        <option value="Virginia">Viriginia</option>
+        <option value="Washington">Washington</option>
+        <option value="California">California</option>
+      </select>
+      </span>
+      </div>
+      <div>
+      <label for="zip_code" class="leb">Zip Code</label>
+      <span><input type="text" id="zip_code" name="user_zip_code" class="zip-code">
+      </span>
+      </div>
+    </fieldset>
+    </section>
+      <hr class="hr2">
+    <section>
+      <fieldset>
+
+      <legend>Newsletter</legend>
+
+      <label>Select the newsletters you would like to receive</label><br>
+      <div class="div">
+      <input type="checkbox" id="HTML" value="HTML_news" name="news" class="checkbox"><label class=light for="HTML">HTML News</label><br>
+      </div>
+      <div class="div">
+      <input type="checkbox" id="CSS" value="CSS_news" name="news" class="checkbox"><label class=light for="CSS">CSS News</label><br>
+      </div>
+      <div class="div">
+      <input type="checkbox" id="Javascript" value="Javascript_news" name="news" class="checkbox"><label class=light for="Javascript">Javascript News</label>
+      </div>
+      </fieldset>
+
+      <fieldset>
+
+        <label>Newsletter format</label>
+        <input type="radio" id="html" value="not_text" name="news"><label for="html" class="light">HTML</label><br>
+        <input type="radio" id="text" value="not_html" name="news"><label for="text" class="light">Plain text</label><br>
+
+        <label for="Other_topics">Other topics you'd like to hear about</label>
+          <textarea id="Other_topics" name="topics"></textarea>
+
+      </fieldset>
+    </section>
+      <button type="submit">Sign Up</button>
+      </form>
+      <footer>
+        <p class="copyright">Copyright The Code Review</p>
+      </footer>
+  </body>
+</html>
