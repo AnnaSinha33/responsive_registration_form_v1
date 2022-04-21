@@ -187,17 +187,16 @@ textarea {
   }
 
   div {
-  display: table;
-  width: 100%
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
   }
-  span {
-  display: table-cell;
-  width: 70%;
-  }
+
   .leb {
-  display: table-cell;
-  width: 1px;
-  white-space: nowrap;
+    flex-basis: 9rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-top: 10px;
   }
 
   .hr1,
